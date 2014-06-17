@@ -1,0 +1,1 @@
+Prf.ApplicationAdapter = DS.FixtureAdapter;
