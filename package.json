@@ -1,7 +1,10 @@
 {
-  "name": "prf",
-  "version": "0.0.0",
-  "dependencies": {},
+  "name": "yrf",
+  "version": "0.1.0",
+  "dependencies": {
+    "oauth": "~1.0.0",
+    "yelp": "~0.1.1"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-copy": "~0.4.1",
