@@ -2,7 +2,7 @@
   "name": "yrf",
   "version": "0.1.0",
   "dependencies": {
-    "oauth": "~1.0.0",
+    "oauth": "latest",
     "yelp": "~0.1.1"
   },
   "devDependencies": {
