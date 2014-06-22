@@ -1,6 +1,6 @@
 Yrf.ApplicationAdapter = DS.FixtureAdapter;
 
-// http://api.yelp.com/business_review_search?term=lunch&lat=33.077857&long=-96.815627&radius=10&limit=100&ywsid=QRD_SWFuVu-7kKP2sChFaA
+// http://api.yelp.com/business_review_search?term=lunch&lat=33.077857&long=-96.815627&radius=10&limit=100
 
 Yrf.Business.FIXTURES =
 [
