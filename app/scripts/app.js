@@ -8,6 +8,7 @@ var Yrf = window.Yrf = Ember.Application.create({
     //LOG_VIEW_LOOKUPS: true
 });
 
+
 /* Order and include as you please. */
 require('yelp');
 require('node-fs');

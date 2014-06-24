@@ -2,7 +2,7 @@
     <ul class="title-area">
     <li class="name">
     <h1>
-        <a href="#">
+        <a href="/">
         Yelp Restaurant Finder
         </a>
     </h1>
@@ -13,9 +13,14 @@
 
 
 <div class="body">
+  <ul>
     {{#each item in controller}}
-        <li class="list-group-item">{{item}}</li>
+        <li class="list-group-item">
+            <a {{bind-attr href=item.url}}><p>{{item.name}}</p>
+            <p><img {{bind-attr src="item.photo_url"}} {{bind-attr alt=item.name}}></p></a>
+        </li>
     {{/each}}
+  </ul>
 </div>
 <div class="row">
     <div class="columns">{{outlet}}</div>
