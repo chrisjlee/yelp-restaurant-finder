@@ -14,8 +14,11 @@ Yrf.Business = DS.Model.extend({
 Yrf.ApplicationAdapter = DS.FixtureAdapter;
 
 // http://api.yelp.com/business_review_search?term=lunch&lat=33.077857&long=-96.815627&radius=10&limit=100
+// var fixture = $.getJson('http://api.yelp.com/business_review_search?term=lunch&lat=33.077857&long=-96.815627&radius=10&limit=99999&ywsid=QRD_SWFuVu-7kKP2sChFaA');
+// console.log(fixture);
 
-Yrf.Business.FIXTURES = [
+Yrf.Business.FIXTURES =
+[
     {
         "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
         "country_code": "US",
@@ -23,7 +26,7 @@ Yrf.Business.FIXTURES = [
         "is_closed": false,
         "city": "Plano",
         "mobile_url": "http://m.yelp.com/biz/jin-mi-restaurant-plano",
-        "review_count": 103,
+        "review_count": 104,
         "zip": "75075",
         "state": "TX",
         "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
@@ -72,7 +75,7 @@ Yrf.Business.FIXTURES = [
         "is_closed": false,
         "city": "Dallas",
         "mobile_url": "http://m.yelp.com/biz/pera-turkish-kitchen-dallas",
-        "review_count": 125,
+        "review_count": 124,
         "zip": "75252",
         "state": "TX",
         "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
@@ -136,7 +139,7 @@ Yrf.Business.FIXTURES = [
         "is_closed": false,
         "city": "Frisco",
         "mobile_url": "http://m.yelp.com/biz/platia-greek-kouzina-frisco",
-        "review_count": 273,
+        "review_count": 274,
         "zip": "75034",
         "state": "TX",
         "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
@@ -167,18 +170,18 @@ Yrf.Business.FIXTURES = [
         "nearby_url": "http://www.yelp.com/search?find_desc=&find_loc=2995+Preston+Rd%2C+Frisco+75034",
         "reviews": [
             {
-                "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
-                "user_photo_url_small": "http://media1.fl.yelpcdn.com/upthumb/la2BKIYVcXEMGylnZLlSpw/ss",
-                "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
-                "rating": 5,
-                "user_url": "http://www.yelp.com/user_details?userid=dFeULy1bwDNuQgUEZ8Rj6g",
-                "url": "http://www.yelp.com/biz/platia-greek-kouzina-frisco?hrid=0S_XKL56Bx0YJsw1HOBK-w",
-                "mobile_uri": "/biz/platia-greek-kouzina-frisco?full=True&hrid=0S_XKL56Bx0YJsw1HOBK-w",
-                "text_excerpt": "Wow, this is great Greek food. I got their combo dish which was a perfect mix of popular Greek foods and dishes, in smaller portion sizes. Try the combo...",
-                "user_photo_url": "http://media1.fl.yelpcdn.com/upthumb/la2BKIYVcXEMGylnZLlSpw/ms",
-                "date": "2014-06-17",
-                "user_name": "Matt J.",
-                "id": "0S_XKL56Bx0YJsw1HOBK-w"
+                "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+                "user_photo_url_small": "http://media1.fl.yelpcdn.com/upthumb/eu0Z5gSjwrt7-t5kseF8MQ/ss",
+                "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+                "rating": 4,
+                "user_url": "http://www.yelp.com/user_details?userid=5El9PkWpU3OAYAEfXcNdhA",
+                "url": "http://www.yelp.com/biz/platia-greek-kouzina-frisco?hrid=Iyu5xTHmAUcy-QFvStVDmA",
+                "mobile_uri": "/biz/platia-greek-kouzina-frisco?full=True&hrid=Iyu5xTHmAUcy-QFvStVDmA",
+                "text_excerpt": "Super quick good food! \n\nI had the vegetarian plate and it was spot on. My only complaints would be the dolmas were a bit mushier than I like and the hummus...",
+                "user_photo_url": "http://media1.fl.yelpcdn.com/upthumb/eu0Z5gSjwrt7-t5kseF8MQ/ms",
+                "date": "2014-06-24",
+                "user_name": "Jen N.",
+                "id": "Iyu5xTHmAUcy-QFvStVDmA"
             }
         ],
         "photo_url_small": "http://media3.fl.yelpcdn.com/bpthumb/RG49DlDUxdJNvqe9dgh3DA/ss"
@@ -190,7 +193,7 @@ Yrf.Business.FIXTURES = [
         "is_closed": false,
         "city": "Plano",
         "mobile_url": "http://m.yelp.com/biz/densetsu-plano",
-        "review_count": 440,
+        "review_count": 441,
         "zip": "75024",
         "state": "TX",
         "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
@@ -244,7 +247,7 @@ Yrf.Business.FIXTURES = [
         "is_closed": false,
         "city": "Plano",
         "mobile_url": "http://m.yelp.com/biz/zo%C3%ABs-kitchen-plano-2",
-        "review_count": 130,
+        "review_count": 131,
         "zip": "75093",
         "state": "TX",
         "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
@@ -303,7 +306,7 @@ Yrf.Business.FIXTURES = [
         "is_closed": false,
         "city": "Plano",
         "mobile_url": "http://m.yelp.com/biz/mama-pita-mediterranean-grill-plano",
-        "review_count": 138,
+        "review_count": 140,
         "zip": "75024",
         "state": "TX",
         "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
@@ -330,17 +333,17 @@ Yrf.Business.FIXTURES = [
         "reviews": [
             {
                 "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
-                "user_photo_url_small": "http://media1.fl.yelpcdn.com/upthumb/yYzQrFObdpUpR-zjpQzBgw/ss",
+                "user_photo_url_small": "http://media1.fl.yelpcdn.com/upthumb/CkFMt0tDCDtUXuGiCbeh5A/ss",
                 "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
                 "rating": 4,
-                "user_url": "http://www.yelp.com/user_details?userid=SgqocLuiOoIP5jB46KKQIA",
-                "url": "http://www.yelp.com/biz/mama-pita-mediterranean-grill-plano?hrid=FDH0-VGNk320RH7azHm2kA",
-                "mobile_uri": "/biz/mama-pita-mediterranean-grill-plano?full=True&hrid=FDH0-VGNk320RH7azHm2kA",
-                "text_excerpt": "My wife and I had great lunch here. Lots of choices, friendly servers helped us on our first visit. We are not experts on Mediterranean food so their help...",
-                "user_photo_url": "http://media1.fl.yelpcdn.com/upthumb/yYzQrFObdpUpR-zjpQzBgw/ms",
-                "date": "2014-06-13",
-                "user_name": "Dennis S.",
-                "id": "FDH0-VGNk320RH7azHm2kA"
+                "user_url": "http://www.yelp.com/user_details?userid=kGaUWZCqENLbeFuA83Mk0Q",
+                "url": "http://www.yelp.com/biz/mama-pita-mediterranean-grill-plano?hrid=5KvwPFyGzrcE4vQ8mUDy-Q",
+                "mobile_uri": "/biz/mama-pita-mediterranean-grill-plano?full=True&hrid=5KvwPFyGzrcE4vQ8mUDy-Q",
+                "text_excerpt": "Went with a friend for lunch 2 weeks ago. I'd never had purple hummus before (it's made from beets), and it's delicious. The only reason this place isn't...",
+                "user_photo_url": "http://media1.fl.yelpcdn.com/upthumb/CkFMt0tDCDtUXuGiCbeh5A/ms",
+                "date": "2014-06-23",
+                "user_name": "Robert P.",
+                "id": "5KvwPFyGzrcE4vQ8mUDy-Q"
             }
         ],
         "photo_url_small": "http://media2.fl.yelpcdn.com/bpthumb/bpjyE9GBNV7N7XODPU63bg/ss"
@@ -405,55 +408,6 @@ Yrf.Business.FIXTURES = [
         "photo_url_small": "http://media1.fl.yelpcdn.com/bpthumb/3Id4uvByDmnWqBZFIaUrnw/ss"
     },
     {
-        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
-        "country_code": "US",
-        "id": "EJReAsPTYnVrBaZNo7MOAQ",
-        "is_closed": false,
-        "city": "Plano",
-        "mobile_url": "http://m.yelp.com/biz/the-latin-pig-plano-2",
-        "review_count": 113,
-        "zip": "75075",
-        "state": "TX",
-        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
-        "address1": "3131 Custer Rd",
-        "address2": "Ste 165",
-        "address3": "",
-        "phone": "9729859760",
-        "state_code": "TX",
-        "categories": [
-            {
-                "category_filter": "cuban",
-                "search_url": "http://www.yelp.com/search?cflt=cuban&find_desc=&find_loc=3131+Custer+Rd%2C+Plano+75075",
-                "name": "Cuban"
-            }
-        ],
-        "photo_url": "http://media4.fl.yelpcdn.com/bpthumb/8MEKxQXaXXju0Po2nBSlyA/ms",
-        "distance": 5.392868995666504,
-        "name": "The Latin Pig",
-        "neighborhoods": [],
-        "url": "http://www.yelp.com/biz/the-latin-pig-plano-2",
-        "country": "USA",
-        "avg_rating": 4.5,
-        "nearby_url": "http://www.yelp.com/search?find_desc=&find_loc=3131+Custer+Rd%2C+Plano+75075",
-        "reviews": [
-            {
-                "rating_img_url_small": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png",
-                "user_photo_url_small": "http://media1.fl.yelpcdn.com/upthumb/o35tgmw_2de-ZZxMEMaHEw/ss",
-                "rating_img_url": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/34bc8086841c/ico/stars/v1/stars_3.png",
-                "rating": 3,
-                "user_url": "http://www.yelp.com/user_details?userid=OJ4omQBZhGHIyLQzFODGcw",
-                "url": "http://www.yelp.com/biz/the-latin-pig-plano-2?hrid=Qpsmv1x509K8obIXPOvVng",
-                "mobile_uri": "/biz/the-latin-pig-plano-2?full=True&hrid=Qpsmv1x509K8obIXPOvVng",
-                "text_excerpt": "I went there for lunch on my first date and as much as I would like to give this place a 4-star,  I can't say that I was in awe of the food.\n\nI got the...",
-                "user_photo_url": "http://media1.fl.yelpcdn.com/upthumb/o35tgmw_2de-ZZxMEMaHEw/ms",
-                "date": "2014-06-16",
-                "user_name": "Jasmine T.",
-                "id": "Qpsmv1x509K8obIXPOvVng"
-            }
-        ],
-        "photo_url_small": "http://media4.fl.yelpcdn.com/bpthumb/8MEKxQXaXXju0Po2nBSlyA/ss"
-    },
-    {
         "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
         "country_code": "US",
         "id": "JMn3caH18JpkxKdkZPQjqg",
@@ -506,6 +460,55 @@ Yrf.Business.FIXTURES = [
             }
         ],
         "photo_url_small": "http://media3.fl.yelpcdn.com/bpthumb/jiadgPpKsTcwvGbnpAOxTw/ss"
+    },
+    {
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "country_code": "US",
+        "id": "EJReAsPTYnVrBaZNo7MOAQ",
+        "is_closed": false,
+        "city": "Plano",
+        "mobile_url": "http://m.yelp.com/biz/the-latin-pig-plano-2",
+        "review_count": 113,
+        "zip": "75075",
+        "state": "TX",
+        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "address1": "3131 Custer Rd",
+        "address2": "Ste 165",
+        "address3": "",
+        "phone": "9729859760",
+        "state_code": "TX",
+        "categories": [
+            {
+                "category_filter": "cuban",
+                "search_url": "http://www.yelp.com/search?cflt=cuban&find_desc=&find_loc=3131+Custer+Rd%2C+Plano+75075",
+                "name": "Cuban"
+            }
+        ],
+        "photo_url": "http://media4.fl.yelpcdn.com/bpthumb/8MEKxQXaXXju0Po2nBSlyA/ms",
+        "distance": 5.392868995666504,
+        "name": "The Latin Pig",
+        "neighborhoods": [],
+        "url": "http://www.yelp.com/biz/the-latin-pig-plano-2",
+        "country": "USA",
+        "avg_rating": 4.5,
+        "nearby_url": "http://www.yelp.com/search?find_desc=&find_loc=3131+Custer+Rd%2C+Plano+75075",
+        "reviews": [
+            {
+                "rating_img_url_small": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png",
+                "user_photo_url_small": "http://media1.fl.yelpcdn.com/upthumb/o35tgmw_2de-ZZxMEMaHEw/ss",
+                "rating_img_url": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/34bc8086841c/ico/stars/v1/stars_3.png",
+                "rating": 3,
+                "user_url": "http://www.yelp.com/user_details?userid=OJ4omQBZhGHIyLQzFODGcw",
+                "url": "http://www.yelp.com/biz/the-latin-pig-plano-2?hrid=Qpsmv1x509K8obIXPOvVng",
+                "mobile_uri": "/biz/the-latin-pig-plano-2?full=True&hrid=Qpsmv1x509K8obIXPOvVng",
+                "text_excerpt": "I went there for lunch on my first date and as much as I would like to give this place a 4-star,  I can't say that I was in awe of the food.\n\nI got the...",
+                "user_photo_url": "http://media1.fl.yelpcdn.com/upthumb/o35tgmw_2de-ZZxMEMaHEw/ms",
+                "date": "2014-06-16",
+                "user_name": "Jasmine T.",
+                "id": "Qpsmv1x509K8obIXPOvVng"
+            }
+        ],
+        "photo_url_small": "http://media4.fl.yelpcdn.com/bpthumb/8MEKxQXaXXju0Po2nBSlyA/ss"
     },
     {
         "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
@@ -567,60 +570,6 @@ Yrf.Business.FIXTURES = [
         "photo_url_small": "http://media4.fl.yelpcdn.com/bpthumb/LG3Mx1o0Up2bwv-rH3KDsg/ss"
     },
     {
-        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
-        "country_code": "US",
-        "id": "MLZe3-XQjIKF6MarC36_XQ",
-        "is_closed": false,
-        "city": "Addison",
-        "mobile_url": "http://m.yelp.com/biz/thai-star-addison-2",
-        "review_count": 360,
-        "zip": "75001",
-        "state": "TX",
-        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
-        "address1": "14833 Midway Rd",
-        "address2": "",
-        "address3": "",
-        "phone": "9729916334",
-        "state_code": "TX",
-        "categories": [
-            {
-                "category_filter": "thai",
-                "search_url": "http://www.yelp.com/search?cflt=thai&find_desc=&find_loc=14833+Midway+Rd%2C+Addison+75001",
-                "name": "Thai"
-            }
-        ],
-        "photo_url": "http://media2.fl.yelpcdn.com/bpthumb/K4BWc0iRACOdynSGvyVkuw/ms",
-        "distance": 8.939547538757324,
-        "name": "Thai Star",
-        "neighborhoods": [
-            {
-                "url": "http://www.yelp.com/search?exclude_start=True&find_desc=&find_loc=Addison%2C+Dallas%2C+TX",
-                "name": "Addison"
-            }
-        ],
-        "url": "http://www.yelp.com/biz/thai-star-addison-2",
-        "country": "USA",
-        "avg_rating": 4.5,
-        "nearby_url": "http://www.yelp.com/search?find_desc=&find_loc=14833+Midway+Rd%2C+Addison+75001",
-        "reviews": [
-            {
-                "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
-                "user_photo_url_small": "http://media1.fl.yelpcdn.com/upthumb/5QI11T_yGeJDMznDF9uFHQ/ss",
-                "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
-                "rating": 4,
-                "user_url": "http://www.yelp.com/user_details?userid=hXSzBUjnORNXkaxwA1j-vg",
-                "url": "http://www.yelp.com/biz/thai-star-addison-2?hrid=mMwWR2CWkR6GUXL3ZPeGsA",
-                "mobile_uri": "/biz/thai-star-addison-2?full=True&hrid=mMwWR2CWkR6GUXL3ZPeGsA",
-                "text_excerpt": "Thai Star is a Thai restaurant in Addison that serves up some delicious food in a quaint setting.  I can't believe it's taken me so long to discover Thai...",
-                "user_photo_url": "http://media1.fl.yelpcdn.com/upthumb/5QI11T_yGeJDMznDF9uFHQ/ms",
-                "date": "2014-06-19",
-                "user_name": "Trinh T.",
-                "id": "mMwWR2CWkR6GUXL3ZPeGsA"
-            }
-        ],
-        "photo_url_small": "http://media2.fl.yelpcdn.com/bpthumb/K4BWc0iRACOdynSGvyVkuw/ss"
-    },
-    {
         "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
         "country_code": "US",
         "id": "c-dFbpHUn5gRtWDypQYHNQ",
@@ -670,13 +619,67 @@ Yrf.Business.FIXTURES = [
         "photo_url_small": "http://media3.fl.yelpcdn.com/bpthumb/KNWOQxMysl-7D5Nn-2Y93Q/ss"
     },
     {
+        "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+        "country_code": "US",
+        "id": "MLZe3-XQjIKF6MarC36_XQ",
+        "is_closed": false,
+        "city": "Addison",
+        "mobile_url": "http://m.yelp.com/biz/thai-star-addison-2",
+        "review_count": 361,
+        "zip": "75001",
+        "state": "TX",
+        "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+        "address1": "14833 Midway Rd",
+        "address2": "",
+        "address3": "",
+        "phone": "9729916334",
+        "state_code": "TX",
+        "categories": [
+            {
+                "category_filter": "thai",
+                "search_url": "http://www.yelp.com/search?cflt=thai&find_desc=&find_loc=14833+Midway+Rd%2C+Addison+75001",
+                "name": "Thai"
+            }
+        ],
+        "photo_url": "http://media2.fl.yelpcdn.com/bpthumb/K4BWc0iRACOdynSGvyVkuw/ms",
+        "distance": 8.939547538757324,
+        "name": "Thai Star",
+        "neighborhoods": [
+            {
+                "url": "http://www.yelp.com/search?exclude_start=True&find_desc=&find_loc=Addison%2C+Dallas%2C+TX",
+                "name": "Addison"
+            }
+        ],
+        "url": "http://www.yelp.com/biz/thai-star-addison-2",
+        "country": "USA",
+        "avg_rating": 4.5,
+        "nearby_url": "http://www.yelp.com/search?find_desc=&find_loc=14833+Midway+Rd%2C+Addison+75001",
+        "reviews": [
+            {
+                "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+                "user_photo_url_small": "http://media1.fl.yelpcdn.com/upthumb/5QI11T_yGeJDMznDF9uFHQ/ss",
+                "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+                "rating": 4,
+                "user_url": "http://www.yelp.com/user_details?userid=hXSzBUjnORNXkaxwA1j-vg",
+                "url": "http://www.yelp.com/biz/thai-star-addison-2?hrid=mMwWR2CWkR6GUXL3ZPeGsA",
+                "mobile_uri": "/biz/thai-star-addison-2?full=True&hrid=mMwWR2CWkR6GUXL3ZPeGsA",
+                "text_excerpt": "Thai Star is a Thai restaurant in Addison that serves up some delicious food in a quaint setting.  I can't believe it's taken me so long to discover Thai...",
+                "user_photo_url": "http://media1.fl.yelpcdn.com/upthumb/5QI11T_yGeJDMznDF9uFHQ/ms",
+                "date": "2014-06-19",
+                "user_name": "Trinh T.",
+                "id": "mMwWR2CWkR6GUXL3ZPeGsA"
+            }
+        ],
+        "photo_url_small": "http://media2.fl.yelpcdn.com/bpthumb/K4BWc0iRACOdynSGvyVkuw/ss"
+    },
+    {
         "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
         "country_code": "US",
         "id": "30vvVCONHaHDXfoVsOHe_Q",
         "is_closed": false,
         "city": "Plano",
         "mobile_url": "http://m.yelp.com/biz/sea-breeze-fish-market-plano",
-        "review_count": 192,
+        "review_count": 195,
         "zip": "75093",
         "state": "TX",
         "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
@@ -824,11 +827,60 @@ Yrf.Business.FIXTURES = [
     {
         "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
         "country_code": "US",
+        "id": "jC4wns-IZyIe9zHu_JwUBA",
+        "is_closed": false,
+        "city": "Plano",
+        "mobile_url": "http://m.yelp.com/biz/kennys-smoke-house-plano",
+        "review_count": 198,
+        "zip": "75024",
+        "state": "TX",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "address1": "5760 Legacy Dr",
+        "address2": "Ste 4",
+        "address3": "",
+        "phone": "9724737478",
+        "state_code": "TX",
+        "categories": [
+            {
+                "category_filter": "bbq",
+                "search_url": "http://www.yelp.com/search?cflt=bbq&find_desc=&find_loc=5760+Legacy+Dr%2C+Plano+75024",
+                "name": "Barbeque"
+            }
+        ],
+        "photo_url": "http://media2.fl.yelpcdn.com/bpthumb/p-M0TLJfD0w4VdS3tzmPKw/ms",
+        "distance": 0.29990291595458984,
+        "name": "Kenny's Smoke House",
+        "neighborhoods": [],
+        "url": "http://www.yelp.com/biz/kennys-smoke-house-plano",
+        "country": "USA",
+        "avg_rating": 4,
+        "nearby_url": "http://www.yelp.com/search?find_desc=&find_loc=5760+Legacy+Dr%2C+Plano+75024",
+        "reviews": [
+            {
+                "rating_img_url_small": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/c7623205d5cd/ico/stars/v1/stars_small_5.png",
+                "user_photo_url_small": "http://media1.fl.yelpcdn.com/upthumb/YOky7TubASolgOa_-5hcnQ/ss",
+                "rating_img_url": "http://s3-media1.fl.yelpcdn.com/assets/2/www/img/f1def11e4e79/ico/stars/v1/stars_5.png",
+                "rating": 5,
+                "user_url": "http://www.yelp.com/user_details?userid=0tf14Cq5NU3PBINpEDXZdQ",
+                "url": "http://www.yelp.com/biz/kennys-smoke-house-plano?hrid=AUVmpzhcB6GhiCGvQ82TbQ",
+                "mobile_uri": "/biz/kennys-smoke-house-plano?full=True&hrid=AUVmpzhcB6GhiCGvQ82TbQ",
+                "text_excerpt": "Working three minutes from here is a very good thing and a very bad thing.\n\nGood: \nFresh baked buns from local bakery: I can just eat this on its own and be...",
+                "user_photo_url": "http://media1.fl.yelpcdn.com/upthumb/YOky7TubASolgOa_-5hcnQ/ms",
+                "date": "2014-06-16",
+                "user_name": "Sara R.",
+                "id": "AUVmpzhcB6GhiCGvQ82TbQ"
+            }
+        ],
+        "photo_url_small": "http://media2.fl.yelpcdn.com/bpthumb/p-M0TLJfD0w4VdS3tzmPKw/ss"
+    },
+    {
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "country_code": "US",
         "id": "HeqS3ubwRtxOk0DEBrWqVg",
         "is_closed": false,
         "city": "Plano",
         "mobile_url": "http://m.yelp.com/biz/rusty-taco-plano",
-        "review_count": 120,
+        "review_count": 123,
         "zip": "75025",
         "state": "TX",
         "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
@@ -854,21 +906,85 @@ Yrf.Business.FIXTURES = [
         "nearby_url": "http://www.yelp.com/search?find_desc=&find_loc=8000+Coit+Rd%2C+Plano+75025",
         "reviews": [
             {
-                "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
-                "user_photo_url_small": "http://media1.fl.yelpcdn.com/upthumb/eqDGa3iLwMuH2Ofg0J4H4g/ss",
-                "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
-                "rating": 4,
-                "user_url": "http://www.yelp.com/user_details?userid=pNBoP_WcUPUjk_d9busr_g",
-                "url": "http://www.yelp.com/biz/rusty-taco-plano?hrid=x3IPAinMSWjAbj-8xZnFLA",
-                "mobile_uri": "/biz/rusty-taco-plano?full=True&hrid=x3IPAinMSWjAbj-8xZnFLA",
-                "text_excerpt": "I've bookmarked Rusty's with the hope that I will one day be able to actually visit the physical restaurant but today will be writing my review based on the...",
-                "user_photo_url": "http://media1.fl.yelpcdn.com/upthumb/eqDGa3iLwMuH2Ofg0J4H4g/ms",
-                "date": "2014-06-18",
-                "user_name": "Pamela A.",
-                "id": "x3IPAinMSWjAbj-8xZnFLA"
+                "rating_img_url_small": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/902abeed0983/ico/stars/v1/stars_small_3.png",
+                "user_photo_url_small": "http://media1.fl.yelpcdn.com/upthumb/MsTRn1c4EMSnDL6PwOc5IQ/ss",
+                "rating_img_url": "http://s3-media3.fl.yelpcdn.com/assets/2/www/img/34bc8086841c/ico/stars/v1/stars_3.png",
+                "rating": 3,
+                "user_url": "http://www.yelp.com/user_details?userid=ro7UvAevAMe0ZVSAm4DAAQ",
+                "url": "http://www.yelp.com/biz/rusty-taco-plano?hrid=8F4mpSjl3Va4tyksGPOv2g",
+                "mobile_uri": "/biz/rusty-taco-plano?full=True&hrid=8F4mpSjl3Va4tyksGPOv2g",
+                "text_excerpt": "The food is okay and tacos are cheap.\n\nI always get the same thing when I come.   I get the Picodillo and the shrimp tacos.   I've had better Picodillo but...",
+                "user_photo_url": "http://media1.fl.yelpcdn.com/upthumb/MsTRn1c4EMSnDL6PwOc5IQ/ms",
+                "date": "2014-06-21",
+                "user_name": "Nancy D.",
+                "id": "8F4mpSjl3Va4tyksGPOv2g"
             }
         ],
         "photo_url_small": "http://media3.fl.yelpcdn.com/bpthumb/tVj_GCeeHv0PJ88h4JxrIg/ss"
+    },
+    {
+        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+        "country_code": "US",
+        "id": "hPrixjgLEA_7LOgCOSMa6g",
+        "is_closed": false,
+        "city": "Dallas",
+        "mobile_url": "http://m.yelp.com/biz/olivers-eatery-dallas",
+        "review_count": 67,
+        "zip": "75287",
+        "state": "TX",
+        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+        "address1": "4727 Frankford Rd",
+        "address2": "Ste 373",
+        "address3": "",
+        "phone": "9728185445",
+        "state_code": "TX",
+        "categories": [
+            {
+                "category_filter": "delis",
+                "search_url": "http://www.yelp.com/search?cflt=delis&find_desc=&find_loc=4727+Frankford+Rd%2C+Dallas+75287",
+                "name": "Delis"
+            },
+            {
+                "category_filter": "newamerican",
+                "search_url": "http://www.yelp.com/search?cflt=newamerican&find_desc=&find_loc=4727+Frankford+Rd%2C+Dallas+75287",
+                "name": "American (New)"
+            },
+            {
+                "category_filter": "sandwiches",
+                "search_url": "http://www.yelp.com/search?cflt=sandwiches&find_desc=&find_loc=4727+Frankford+Rd%2C+Dallas+75287",
+                "name": "Sandwiches"
+            }
+        ],
+        "photo_url": "http://media3.fl.yelpcdn.com/bpthumb/OxtcXZ1VfenxhRHTVMZgXQ/ms",
+        "distance": 5.464498043060303,
+        "name": "Oliver's Eatery",
+        "neighborhoods": [
+            {
+                "url": "http://www.yelp.com/search?exclude_start=True&find_desc=&find_loc=North+Dallas%2C+Dallas%2C+TX",
+                "name": "North Dallas"
+            }
+        ],
+        "url": "http://www.yelp.com/biz/olivers-eatery-dallas",
+        "country": "USA",
+        "avg_rating": 4,
+        "nearby_url": "http://www.yelp.com/search?find_desc=&find_loc=4727+Frankford+Rd%2C+Dallas+75287",
+        "reviews": [
+            {
+                "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a6210baec261/ico/stars/v1/stars_small_2.png",
+                "user_photo_url_small": "http://media1.fl.yelpcdn.com/upthumb/hsEtzX1GDkyZ7kyvwFmggQ/ss",
+                "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/b561c24f8341/ico/stars/v1/stars_2.png",
+                "rating": 2,
+                "user_url": "http://www.yelp.com/user_details?userid=SeND6MXbxMe3b6msMAQZlw",
+                "url": "http://www.yelp.com/biz/olivers-eatery-dallas?hrid=95HJEKjQCvN8-kpbrgJWaQ",
+                "mobile_uri": "/biz/olivers-eatery-dallas?full=True&hrid=95HJEKjQCvN8-kpbrgJWaQ",
+                "text_excerpt": "Needed a quick lunch late in the day and wanted to check out something healthy-ish. The website and reviews made it sound like other nice lunch spots I've...",
+                "user_photo_url": "http://media1.fl.yelpcdn.com/upthumb/hsEtzX1GDkyZ7kyvwFmggQ/ms",
+                "date": "2014-06-09",
+                "user_name": "Leah L.",
+                "id": "95HJEKjQCvN8-kpbrgJWaQ"
+            }
+        ],
+        "photo_url_small": "http://media3.fl.yelpcdn.com/bpthumb/OxtcXZ1VfenxhRHTVMZgXQ/ss"
     },
     {
         "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
@@ -877,7 +993,7 @@ Yrf.Business.FIXTURES = [
         "is_closed": false,
         "city": "Richardson",
         "mobile_url": "http://m.yelp.com/biz/cafe-max-richardson-richardson",
-        "review_count": 60,
+        "review_count": 57,
         "zip": "75081",
         "state": "TX",
         "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
@@ -888,18 +1004,13 @@ Yrf.Business.FIXTURES = [
         "state_code": "TX",
         "categories": [
             {
-                "category_filter": "catering",
-                "search_url": "http://www.yelp.com/search?cflt=catering&find_desc=&find_loc=1600+Alma+Rd%2C+Richardson+75081",
-                "name": "Caterers"
-            },
-            {
                 "category_filter": "newamerican",
                 "search_url": "http://www.yelp.com/search?cflt=newamerican&find_desc=&find_loc=1600+Alma+Rd%2C+Richardson+75081",
                 "name": "American (New)"
             }
         ],
         "photo_url": "http://media1.fl.yelpcdn.com/bpthumb/LlZyif1Vm6-IVF_pyv70UA/ms",
-        "distance": 9.478753089904785,
+        "distance": 9.488744735717773,
         "name": "Cafe Max Richardson",
         "neighborhoods": [],
         "url": "http://www.yelp.com/biz/cafe-max-richardson-richardson",
@@ -972,123 +1083,5 @@ Yrf.Business.FIXTURES = [
             }
         ],
         "photo_url_small": "http://media1.fl.yelpcdn.com/bpthumb/lgg8yyQEK0qP1R17xmxs9w/ss"
-    },
-    {
-        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
-        "country_code": "US",
-        "id": "hPrixjgLEA_7LOgCOSMa6g",
-        "is_closed": false,
-        "city": "Dallas",
-        "mobile_url": "http://m.yelp.com/biz/olivers-eatery-dallas",
-        "review_count": 67,
-        "zip": "75287",
-        "state": "TX",
-        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
-        "address1": "4727 Frankford Rd",
-        "address2": "Ste 373",
-        "address3": "",
-        "phone": "9728185445",
-        "state_code": "TX",
-        "categories": [
-            {
-                "category_filter": "delis",
-                "search_url": "http://www.yelp.com/search?cflt=delis&find_desc=&find_loc=4727+Frankford+Rd%2C+Dallas+75287",
-                "name": "Delis"
-            },
-            {
-                "category_filter": "newamerican",
-                "search_url": "http://www.yelp.com/search?cflt=newamerican&find_desc=&find_loc=4727+Frankford+Rd%2C+Dallas+75287",
-                "name": "American (New)"
-            },
-            {
-                "category_filter": "sandwiches",
-                "search_url": "http://www.yelp.com/search?cflt=sandwiches&find_desc=&find_loc=4727+Frankford+Rd%2C+Dallas+75287",
-                "name": "Sandwiches"
-            }
-        ],
-        "photo_url": "http://media3.fl.yelpcdn.com/bpthumb/OxtcXZ1VfenxhRHTVMZgXQ/ms",
-        "distance": 5.464498043060303,
-        "name": "Oliver's Eatery",
-        "neighborhoods": [
-            {
-                "url": "http://www.yelp.com/search?exclude_start=True&find_desc=&find_loc=North+Dallas%2C+Dallas%2C+TX",
-                "name": "North Dallas"
-            }
-        ],
-        "url": "http://www.yelp.com/biz/olivers-eatery-dallas",
-        "country": "USA",
-        "avg_rating": 4,
-        "nearby_url": "http://www.yelp.com/search?find_desc=&find_loc=4727+Frankford+Rd%2C+Dallas+75287",
-        "reviews": [
-            {
-                "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a6210baec261/ico/stars/v1/stars_small_2.png",
-                "user_photo_url_small": "http://media1.fl.yelpcdn.com/upthumb/hsEtzX1GDkyZ7kyvwFmggQ/ss",
-                "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/b561c24f8341/ico/stars/v1/stars_2.png",
-                "rating": 2,
-                "user_url": "http://www.yelp.com/user_details?userid=SeND6MXbxMe3b6msMAQZlw",
-                "url": "http://www.yelp.com/biz/olivers-eatery-dallas?hrid=95HJEKjQCvN8-kpbrgJWaQ",
-                "mobile_uri": "/biz/olivers-eatery-dallas?full=True&hrid=95HJEKjQCvN8-kpbrgJWaQ",
-                "text_excerpt": "Needed a quick lunch late in the day and wanted to check out something healthy-ish. The website and reviews made it sound like other nice lunch spots I've...",
-                "user_photo_url": "http://media1.fl.yelpcdn.com/upthumb/hsEtzX1GDkyZ7kyvwFmggQ/ms",
-                "date": "2014-06-09",
-                "user_name": "Leah L.",
-                "id": "95HJEKjQCvN8-kpbrgJWaQ"
-            }
-        ],
-        "photo_url_small": "http://media3.fl.yelpcdn.com/bpthumb/OxtcXZ1VfenxhRHTVMZgXQ/ss"
-    },
-    {
-        "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
-        "country_code": "US",
-        "id": "38_FElG3Gx14JU9CnZHkKw",
-        "is_closed": false,
-        "city": "Plano",
-        "mobile_url": "http://m.yelp.com/biz/kor-bq-plano-2",
-        "review_count": 238,
-        "zip": "75093",
-        "state": "TX",
-        "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
-        "address1": "6505 W Park Blvd",
-        "address2": "Ste 314",
-        "address3": "",
-        "phone": "2143902850",
-        "state_code": "TX",
-        "categories": [
-            {
-                "category_filter": "korean",
-                "search_url": "http://www.yelp.com/search?cflt=korean&find_desc=&find_loc=6505+W+Park+Blvd%2C+Plano+75093",
-                "name": "Korean"
-            },
-            {
-                "category_filter": "hotdogs",
-                "search_url": "http://www.yelp.com/search?cflt=hotdogs&find_desc=&find_loc=6505+W+Park+Blvd%2C+Plano+75093",
-                "name": "Fast Food"
-            }
-        ],
-        "photo_url": "http://media1.fl.yelpcdn.com/bpthumb/n_46-H6Im23Hh8TuW7Ny1A/ms",
-        "distance": 3.729358673095703,
-        "name": "Kor-BQ",
-        "neighborhoods": [],
-        "url": "http://www.yelp.com/biz/kor-bq-plano-2",
-        "country": "USA",
-        "avg_rating": 4,
-        "nearby_url": "http://www.yelp.com/search?find_desc=&find_loc=6505+W+Park+Blvd%2C+Plano+75093",
-        "reviews": [
-            {
-                "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
-                "user_photo_url_small": "http://media1.fl.yelpcdn.com/upthumb/DqmWkvOlZpFZ25nr6eRkhg/ss",
-                "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
-                "rating": 4,
-                "user_url": "http://www.yelp.com/user_details?userid=9oXfC6zHatmA8z7K0d6fng",
-                "url": "http://www.yelp.com/biz/kor-bq-plano-2?hrid=5QYKAs-_96u7Dp9j178Uuw",
-                "mobile_uri": "/biz/kor-bq-plano-2?full=True&hrid=5QYKAs-_96u7Dp9j178Uuw",
-                "text_excerpt": "Korean fusion done RIGHT. I love this place, had it 10+ times, and I still get it every once and a while. The owner is pretty funny and cool! Real genuine....",
-                "user_photo_url": "http://media1.fl.yelpcdn.com/upthumb/DqmWkvOlZpFZ25nr6eRkhg/ms",
-                "date": "2014-05-18",
-                "user_name": "Kevin N.",
-                "id": "5QYKAs-_96u7Dp9j178Uuw"
-            }
-        ],
-        "photo_url_small": "http://media1.fl.yelpcdn.com/bpthumb/n_46-H6Im23Hh8TuW7Ny1A/ss"
     }
 ]
