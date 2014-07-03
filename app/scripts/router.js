@@ -1,6 +1,6 @@
 Yrf.Router.map(function () {
     this.route('/');
-    this.route('/get');
+    this.route('/all', {path: 'all'});
 });
 
 Yrf.ApplicationRoute = Ember.Route.extend({

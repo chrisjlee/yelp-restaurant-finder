@@ -8,3 +8,10 @@
 //   // }
 
 // });
+//
+
+
+// Yrf.BusinessController = Ember.Controller.extend({
+//   expanded: false,
+//   random: true
+// });

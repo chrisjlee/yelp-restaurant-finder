@@ -1,6 +1,7 @@
 /* Put your CSS here */
 
-.list-group-style {
+.list-group-item {
   list-style-type: none;
+  text-align: center;
 }
 

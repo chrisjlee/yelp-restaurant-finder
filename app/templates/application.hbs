@@ -7,21 +7,24 @@
         </a>
     </h1>
     </li>
-    <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
-    </ul>
+    <li>
+    </li>
+<!--     <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
+    </ul> -->
 </nav>
 
 
+
 <div class="body">
+  <div class="row">
+      <div class="columns">{{outlet}}</div>
+  </div>
   <ul>
-    {{#each item in controller}}
-        <li class="list-group-item">
-            <a {{bind-attr href=item.url}} target="_blank"><p>{{item.name}}</p>
-            <p><img {{bind-attr src="item.photo_url"}} {{bind-attr alt=item.name}}></p></a>
-        </li>
-    {{/each}}
+      {{#each item in controller}}
+          <li class="list-group-item">
+              <a {{bind-attr href=item.url}} target="_blank"><p>{{item.name}}</p>
+              <p><img {{bind-attr src="item.photo_url"}} {{bind-attr alt=item.name}}></p></a>
+          </li>
+      {{/each}}
   </ul>
-</div>
-<div class="row">
-    <div class="columns">{{outlet}}</div>
 </div>
