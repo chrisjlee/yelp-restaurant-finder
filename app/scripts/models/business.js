@@ -7,7 +7,10 @@ Yrf.Business = DS.Model.extend({
     address2: DS.attr('string'),
     phone: DS.attr('string'),
     url: DS.attr('string'),
-    photo_url: DS.attr('image')
+    photo_url: DS.attr('image'),
+    nId: function() {
+      return +this.get('id');
+    }.property('id')
  });
 
 
